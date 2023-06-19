@@ -11,16 +11,16 @@ let proxyIP = '';
 // The user name and password do not contain special characters
 // Setting the address will ignore proxyIP
 // Example:  user:pass@host:port  or  host:port
-let socks5Address = '';
+let socks5Address = 'myuser:mypass@[2403:6200:88a2:643a:1577:7285:f69e:bad5]:8888';
 
 if (!isValidUUID(userID)) {
-	throw new Error('uuid is not valid');
+	throw 新建 Error('uuid is not valid');
 }
 
 let parsedSocks5Address = {}; 
 let enableSocks = false;
 
-export default {
+export 默认 {
 	/**
 	 * @param {import("@cloudflare/workers-types").Request} request
 	 * @param {{UUID: string, PROXYIP: string}} env
